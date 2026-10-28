@@ -1,0 +1,264 @@
+# good-<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Good Game | مقهى ألعاب في دراريّة، الجزائر</title>
+<meta name="description" content="PS5, Xbox Series X/S وPS4 بالتسعيرة لكل ربع ساعة. FC 27 وCall of Duty وGTA 5 Online وRocket League. دراريّة، الجزائر. / Console gaming lounge in Draria, Algiers.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎮%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070f;--pn:#12122b;--pu:#8b3dff;--cy:#22d3ee;--tx:#eef0ff;--mu:#a4a7c8;--ln:#2d2d58}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;color-scheme:dark;scroll-padding-top:72px}
+html[lang=ar] .en,html[lang=en] .ar{display:none}
+body{background:var(--bg);color:var(--tx);font:16px/1.7 Cairo,Tajawal,system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom,0)}
+h1,h2,h3,.logo{font-family:Orbitron,Cairo,sans-serif;line-height:1.25}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.wrap{max-width:1080px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:rgba(7,7,15,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln);padding-top:env(safe-area-inset-top,0)}
+header .wrap{display:flex;align-items:center;gap:18px;height:62px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;text-decoration:none;font-size:1.05rem}
+.logo svg{width:34px;height:22px}
+nav{display:flex;gap:18px;margin-inline-start:auto;font-size:.95rem}
+nav a{text-decoration:none;color:var(--mu)}nav a:hover{color:var(--cy)}
+.lang{background:none;border:1px solid var(--ln);color:var(--tx);border-radius:8px;padding:4px 12px;font:600 .9rem Orbitron,Cairo;cursor:pointer}
+.btn{display:inline-block;border:0;border-radius:10px;padding:12px 24px;font:800 1rem Cairo,sans-serif;color:#fff;background:linear-gradient(100deg,var(--pu),#5b5cff 60%,var(--cy));text-decoration:none;cursor:pointer;box-shadow:0 6px 24px rgba(139,61,255,.35)}
+.btn:hover{filter:brightness(1.12)}
+.btn.ghost{background:none;box-shadow:none;border:1px solid var(--cy);color:var(--cy)}
+.btn[disabled]{opacity:.6;cursor:wait}
+.hero{position:relative;overflow:hidden;padding:72px 0 64px;background:radial-gradient(60% 70% at 85% 10%,rgba(139,61,255,.35),transparent),radial-gradient(50% 60% at 10% 90%,rgba(34,211,238,.18),transparent)}
+.hero .wrap{display:grid;gap:32px;grid-template-columns:1.2fr .8fr;align-items:center}
+.status{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ln);border-radius:99px;padding:3px 14px;font-size:.9rem;color:var(--mu);margin-bottom:18px}
+.status i{width:9px;height:9px;border-radius:50%;background:#666}
+.status.on i{background:#3ddc84;box-shadow:0 0 10px #3ddc84}
+h1{font-size:clamp(2rem,6vw,3.9rem);font-weight:800;margin-bottom:6px}
+.sub{font:600 clamp(1rem,2.5vw,1.4rem) Orbitron,Cairo;color:var(--cy);margin-bottom:18px}
+.hero p.d{color:var(--mu);max-width:52ch;margin-bottom:26px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.pad{width:100%;max-width:380px;justify-self:center;filter:drop-shadow(0 0 22px rgba(139,61,255,.6))}
+.rgb{height:3px;background:linear-gradient(90deg,var(--pu),var(--cy),#ff3dcb,var(--pu));background-size:300% 100%;animation:slide 6s linear infinite}
+@keyframes slide{to{background-position:300% 0}}
+section{padding:68px 0}
+h2{font-size:clamp(1.5rem,4vw,2.2rem);margin-bottom:8px}
+.lead{color:var(--mu);margin-bottom:30px;max-width:60ch}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--pn);border:1px solid var(--ln);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.card h3{font-size:1.2rem}
+.card p{color:var(--mu);font-size:.95rem}
+.price{font:800 2rem Orbitron,sans-serif;color:var(--cy)}
+.price small{font:400 .85rem Cairo;color:var(--mu)}
+.card .btn{margin-top:auto;text-align:center}
+.tag{align-self:flex-start;font-size:.8rem;border-radius:6px;padding:0 10px;background:rgba(139,61,255,.2);color:#c9a8ff}
+.tag.s{background:rgba(34,211,238,.14);color:var(--cy)}
+.game{min-height:130px;justify-content:flex-end;background:linear-gradient(160deg,rgba(139,61,255,.3),var(--pn) 70%)}
+.game:nth-child(even){background:linear-gradient(160deg,rgba(34,211,238,.2),var(--pn) 70%)}
+.game h3{font-size:1.4rem}
+table{width:100%;border-collapse:collapse;background:var(--pn);border-radius:14px;overflow:hidden}
+th,td{padding:14px 18px;text-align:start;border-bottom:1px solid var(--ln)}
+th{color:var(--cy);font-weight:600}
+td:not(:first-child){font-family:Orbitron,sans-serif;font-weight:600}
+.scroll{overflow-x:auto}
+.note{color:var(--mu);font-size:.9rem;margin-top:14px}
+.book{display:grid;gap:30px;grid-template-columns:1fr 1fr;align-items:start}
+form{background:var(--pn);border:1px solid var(--ln);border-radius:14px;padding:24px;display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.f{display:flex;flex-direction:column;gap:4px;font-size:.9rem;color:var(--mu)}
+.f.w{grid-column:1/-1}
+input,select{background:#0a0a1c;border:1px solid var(--ln);border-radius:8px;color:var(--tx);padding:10px 12px;font:inherit;min-height:44px;color-scheme:dark}
+input:focus,select:focus{border-color:var(--cy)}
+.total{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;border-top:1px dashed var(--ln);padding-top:12px}
+.total b{font:800 1.8rem Orbitron,sans-serif;color:var(--cy)}
+#msg{grid-column:1/-1;font-size:.95rem;min-height:1.4em}
+#msg.err{color:#ff7a8a}#msg.ok{color:#3ddc84}
+.hours tr.today td{background:rgba(139,61,255,.18)}
+.hours td:not(:first-child){font-family:Cairo,sans-serif;font-weight:400}
+.contact{display:grid;gap:12px}
+.contact a.btn{text-align:center}
+footer{border-top:1px solid var(--ln);padding:26px 0 90px;color:var(--mu);font-size:.9rem;text-align:center}
+.sticky{display:none}
+@media(max-width:760px){
+ nav{display:none}.lang{margin-inline-start:auto}
+ .hero .wrap,.book{grid-template-columns:1fr}
+ .pad{max-width:240px;order:-1}
+ form{grid-template-columns:1fr}
+ section{padding:48px 0}
+ .sticky{display:block;position:fixed;inset-inline:14px;bottom:calc(12px + env(safe-area-inset-bottom,0));z-index:30;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){.rgb{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b3dff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+<symbol id="gp" viewBox="0 0 200 120"><path d="M50 14h100c22 0 38 32 44 68 3 20-15 26-27 13l-19-21H52L33 95C21 108 3 102 6 82c6-36 22-68 44-68z" fill="none" stroke="url(#g)" stroke-width="6" stroke-linejoin="round"/><path d="M52 44h22M63 33v22" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/><g fill="url(#g)"><circle cx="140" cy="36" r="6"/><circle cx="158" cy="48" r="6"/><circle cx="140" cy="60" r="6"/><circle cx="122" cy="48" r="6"/></g></symbol></defs></svg>
+
+<header><div class="wrap">
+ <a class="logo" href="#top"><svg><use href="#gp"/></svg>GOOD GAME</a>
+ <nav>
+  <a href="#top"><span class="ar">الرئيسية</span><span class="en">Home</span></a>
+  <a href="#consoles"><span class="ar">الأجهزة</span><span class="en">Consoles</span></a>
+  <a href="#pricing"><span class="ar">الأسعار</span><span class="en">Pricing</span></a>
+  <a href="#book"><span class="ar">الحجز</span><span class="en">Booking</span></a>
+  <a href="#games"><span class="ar">الألعاب</span><span class="en">Games</span></a>
+  <a href="#contact"><span class="ar">اتصل بنا</span><span class="en">Contact</span></a>
+ </nav>
+ <button class="lang" id="lang" type="button" aria-label="Language">EN</button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+ <div>
+  <div class="status" id="open"><i></i><span id="openTxt"></span></div>
+  <h1><span class="ar">عالمك للألعاب يبدأ من هنا</span><span class="en">YOUR GAME. YOUR WORLD.</span></h1>
+  <p class="sub"><span class="ar">YOUR GAME. YOUR WORLD.</span><span class="en">Consoles, by the quarter hour</span></p>
+  <p class="d"><span class="ar">PS5 وXbox Series X وSeries S وPS4 جاهزة للعب. اختر جهازك، وادفع بالربع ساعة، والعب مع أصدقائك حتى الثانية صباحًا.</span><span class="en">PS5, Xbox Series X, Series S and PS4, ready to play. Pick a console, pay per quarter hour, and play with friends until 2 AM.</span></p>
+  <div class="row">
+   <a class="btn" href="#book"><span class="ar">احجز جلستك الآن | Book Your Session</span><span class="en">Book Your Session | احجز جلستك الآن</span></a>
+   <a class="btn ghost" href="#pricing"><span class="ar">الأسعار</span><span class="en">See prices</span></a>
+  </div>
+ </div>
+ <svg class="pad" viewBox="0 0 200 120" role="img" aria-label="Gamepad"><use href="#gp"/></svg>
+</div></div>
+<div class="rgb"></div>
+
+<section id="consoles"><div class="wrap">
+ <h2><span class="ar">الأجهزة</span><span class="en">Consoles</span></h2>
+ <p class="lead"><span class="ar">أربعة أجهزة متوفرة كلها. السعر لكل ربع ساعة.</span><span class="en">Four consoles, all available. Priced per quarter hour.</span></p>
+ <div class="grid">
+  <div class="card"><span class="tag">PlayStation</span><h3>PS5</h3><p><span class="ar">أحدث جيل من سوني.</span><span class="en">Sony’s latest generation.</span></p><div class="price">150 <small>DZD / 15 min</small></div><a class="btn pick" data-c="ps5" href="#book"><span class="ar">احجز</span><span class="en">Book</span></a></div>
+  <div class="card"><span class="tag s">Xbox</span><h3>Xbox Series X</h3><p><span class="ar">أقوى أجهزة Xbox.</span><span class="en">The most powerful Xbox.</span></p><div class="price">150 <small>DZD / 15 min</small></div><a class="btn pick" data-c="xsx" href="#book"><span class="ar">احجز</span><span class="en">Book</span></a></div>
+  <div class="card"><span class="tag">PlayStation</span><h3>PS4</h3><p><span class="ar">مناسب للألعاب الجماعية.</span><span class="en">Great for group play.</span></p><div class="price">100 <small>DZD / 15 min</small></div><a class="btn pick" data-c="ps4" href="#book"><span class="ar">احجز</span><span class="en">Book</span></a></div>
+  <div class="card"><span class="tag s">Xbox</span><h3>Xbox Series S</h3><p><span class="ar">سلاسة اللعب بسعر أقل.</span><span class="en">Smooth play at a lower rate.</span></p><div class="price">100 <small>DZD / 15 min</small></div><a class="btn pick" data-c="xss" href="#book"><span class="ar">احجز</span><span class="en">Book</span></a></div>
+ </div>
+</div></section>
+
+<section id="pricing" style="background:#0b0b1c"><div class="wrap">
+ <h2><span class="ar">الأسعار</span><span class="en">Pricing</span></h2>
+ <p class="lead"><span class="ar">الأسعار محسوبة من تسعيرة الربع ساعة، للجهاز الواحد.</span><span class="en">Calculated from the quarter-hour rate, per console.</span></p>
+ <div class="scroll"><table>
+  <tr><th><span class="ar">المدة</span><span class="en">Time</span></th><th>PS5 / Xbox Series X</th><th>PS4 / Xbox Series S</th></tr>
+  <tr><td><span class="ar">15 دقيقة</span><span class="en">15 min</span></td><td>150 DZD</td><td>100 DZD</td></tr>
+  <tr><td><span class="ar">30 دقيقة</span><span class="en">30 min</span></td><td>300 DZD</td><td>200 DZD</td></tr>
+  <tr><td><span class="ar">ساعة</span><span class="en">1 hour</span></td><td>600 DZD</td><td>400 DZD</td></tr>
+  <tr><td><span class="ar">ساعتان</span><span class="en">2 hours</span></td><td>1200 DZD</td><td>800 DZD</td></tr>
+ </table></div>
+ <p class="note"><span class="ar">للاستفسار عن العروض أو الباقات، تواصل معنا مباشرة.</span><span class="en">Ask us directly about offers or bundles.</span></p>
+</div></section>
+
+<section id="book"><div class="wrap book">
+ <div>
+  <h2><span class="ar">احجز جلستك</span><span class="en">Book your session</span></h2>
+  <p class="lead"><span class="ar">املأ الطلب وسنفتح لك محادثة واتساب جاهزة. الحجز لا يتأكد إلا بعد ردّ المقهى.</span><span class="en">Fill in the request and we’ll open a ready WhatsApp message. A booking is only confirmed once the café replies.</span></p>
+ </div>
+ <form id="f" novalidate>
+  <label class="f w"><span class="ar">الجهاز</span><span class="en">Console</span>
+   <select id="c"><option value="ps5">PS5 (150 DZD)</option><option value="xsx">Xbox Series X (150 DZD)</option><option value="ps4">PS4 (100 DZD)</option><option value="xss">Xbox Series S (100 DZD)</option></select></label>
+  <label class="f"><span class="ar">التاريخ</span><span class="en">Date</span><input type="date" id="d" required></label>
+  <label class="f"><span class="ar">وقت البداية</span><span class="en">Start time</span><input type="time" id="t" value="18:00" step="900" required></label>
+  <label class="f"><span class="ar">المدة</span><span class="en">Duration</span>
+   <select id="m"><option value="15">15 min / 15 د</option><option value="30">30 min / 30 د</option><option value="60" selected>1 h / ساعة</option><option value="90">1.5 h / ساعة ونصف</option><option value="120">2 h / ساعتان</option><option value="180">3 h / 3 ساعات</option></select></label>
+  <label class="f"><span class="ar">عدد الأجهزة</span><span class="en">Number of consoles</span><input type="number" id="n" min="1" max="8" value="1"></label>
+  <label class="f"><span class="ar">الاسم</span><span class="en">Name</span><input type="text" id="nm" autocomplete="name" required></label>
+  <label class="f w"><span class="ar">رقم الهاتف</span><span class="en">Phone number</span><input type="tel" id="ph" autocomplete="tel" inputmode="tel" required></label>
+  <div class="total"><span class="ar">الإجمالي التقديري</span><span class="en">Estimated total</span><b id="tot">600 DZD</b></div>
+  <div id="msg" role="status" aria-live="polite"></div>
+  <button class="btn" id="go" type="submit" style="grid-column:1/-1"><span class="ar">أرسل الطلب عبر واتساب</span><span class="en">Send request on WhatsApp</span></button>
+ </form>
+</div></section>
+
+<section id="games" style="background:#0b0b1c"><div class="wrap">
+ <h2><span class="ar">الألعاب</span><span class="en">Games</span></h2>
+ <p class="lead"><span class="ar">كل الألعاب متوفرة على الأجهزة.</span><span class="en">All games are available on the consoles.</span></p>
+ <div class="grid">
+  <div class="card game"><h3>FC 27</h3><p><span class="ar">كرة القدم، فردي أو ضد صديق.</span><span class="en">Football, solo or head to head.</span></p></div>
+  <div class="card game"><h3>Call of Duty</h3><p><span class="ar">أكشن وتصويب جماعي.</span><span class="en">Team shooter action.</span></p></div>
+  <div class="card game"><h3>GTA 5 Online</h3><p><span class="ar">عالم مفتوح مع أصدقائك.</span><span class="en">Open world with your friends.</span></p></div>
+  <div class="card game"><h3>Rocket League</h3><p><span class="ar">كرة قدم بالسيارات.</span><span class="en">Soccer with rocket cars.</span></p></div>
+ </div>
+ <p class="note"><span class="ar">للبطولات والتحديات بين الأصدقاء، اسأل فريق المقهى على واتساب.</span><span class="en">For tournaments and friend challenges, ask the café team on WhatsApp.</span></p>
+</div></section>
+
+<section id="contact"><div class="wrap book">
+ <div>
+  <h2><span class="ar">اتصل بنا</span><span class="en">Find us</span></h2>
+  <p class="lead">38 Rue Benchabane Mouloud, Draria 16000</p>
+  <div class="contact">
+   <a class="btn" href="https://wa.me/213559567886" target="_blank" rel="noopener">WhatsApp 0559 56 78 86</a>
+   <a class="btn ghost" href="tel:+213559567886"><span class="ar">اتصل</span><span class="en">Call</span> 0559 56 78 86</a>
+   <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=38+Rue+Benchabane+Mouloud+Draria+16000" target="_blank" rel="noopener"><span class="ar">افتح الخريطة</span><span class="en">Open in Maps</span></a>
+  </div>
+ </div>
+ <div>
+  <h3 style="margin-bottom:12px"><span class="ar">ساعات العمل</span><span class="en">Opening hours</span></h3>
+  <table class="hours" id="hrs">
+   <tr data-d="3"><td><span class="ar">الأربعاء</span><span class="en">Wednesday</span></td><td><span class="ar">10:00 ص – 2:00 ص</span><span class="en">10 AM–2 AM</span></td></tr>
+   <tr data-d="4"><td><span class="ar">الخميس</span><span class="en">Thursday</span></td><td><span class="ar">10:00 ص – 2:00 ص</span><span class="en">10 AM–2 AM</span></td></tr>
+   <tr data-d="5"><td><span class="ar">الجمعة</span><span class="en">Friday</span></td><td><span class="ar">3:00 م – 2:00 ص</span><span class="en">3 PM–2 AM</span></td></tr>
+   <tr data-d="6"><td><span class="ar">السبت</span><span class="en">Saturday</span></td><td><span class="ar">10:00 ص – 2:00 ص</span><span class="en">10 AM–2 AM</span></td></tr>
+   <tr data-d="0"><td><span class="ar">الأحد</span><span class="en">Sunday</span></td><td><span class="ar">10:00 ص – 2:00 ص</span><span class="en">10 AM–2 AM</span></td></tr>
+   <tr data-d="1"><td><span class="ar">الاثنين</span><span class="en">Monday</span></td><td><span class="ar">10:00 ص – 2:00 ص</span><span class="en">10 AM–2 AM</span></td></tr>
+   <tr data-d="2"><td><span class="ar">الثلاثاء</span><span class="en">Tuesday</span></td><td><span class="ar">10:00 ص – 2:00 ص</span><span class="en">10 AM–2 AM</span></td></tr>
+  </table>
+  <p class="note"><span class="ar">يوم الأحد (ذكرى الثورة): قد تختلف الأوقات.</span><span class="en">Sunday (Anniversary of the Revolution): hours might differ.</span></p>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Good Game, Draria</div></footer>
+<a class="btn sticky" href="#book"><span class="ar">احجز جلستك الآن</span><span class="en">Book Your Session</span></a>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)},R={ps5:150,xsx:150,ps4:100,xss:100},N={ps5:'PS5',xsx:'Xbox Series X',ps4:'PS4',xss:'Xbox Series S'};
+var ph={nm:['اسمك الكامل','Your full name'],ph:['0555 00 00 00','0555 00 00 00']};
+function L(){return document.documentElement.lang}
+function T(a,e){return L()=='ar'?a:e}
+function setLang(l){
+ var h=document.documentElement;h.lang=l;h.dir=l=='ar'?'rtl':'ltr';
+ $('lang').textContent=l=='ar'?'EN':'عربي';
+ for(var k in ph)$(k).placeholder=ph[k][l=='ar'?0:1];
+ try{localStorage.setItem('gg-lang',l)}catch(e){}
+ status();
+}
+function total(){
+ var v=R[$('c').value]*($('m').value/15)*Math.max(1,+$('n').value||1);
+ $('tot').textContent=v+' DZD';return v;
+}
+function now(){
+ var p={};new Intl.DateTimeFormat('en-US',{timeZone:'Africa/Algiers',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
+ return{d:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday),m:(+p.hour%24)*60+ +p.minute};
+}
+function status(){
+ var n=now(),open=n.d==5?900:600,on=n.m>=open||n.m<120;
+ $('open').className='status'+(on?' on':'');
+ $('openTxt').textContent=on?T('مفتوح الآن حتى 2:00 ص','Open now, until 2 AM'):T('مغلق الآن','Closed now');
+ var rows=document.querySelectorAll('#hrs tr');
+ for(var i=0;i<rows.length;i++)rows[i].className=(+rows[i].dataset.d==n.d)?'today':'';
+}
+function msg(c,t){var m=$('msg');m.className=c;m.textContent=t}
+var s;try{s=localStorage.getItem('gg-lang')}catch(e){}
+$('lang').onclick=function(){setLang(L()=='ar'?'en':'ar')};
+['c','m','n'].forEach(function(i){$(i).addEventListener('input',total)});
+var td=new Date();$('d').min=$('d').value=td.getFullYear()+'-'+('0'+(td.getMonth()+1)).slice(-2)+'-'+('0'+td.getDate()).slice(-2);
+Array.prototype.forEach.call(document.querySelectorAll('.pick'),function(b){b.onclick=function(){$('c').value=b.dataset.c;total()}});
+$('f').onsubmit=function(e){
+ e.preventDefault();msg('','');
+ var d=$('d').value,t=$('t').value,nm=$('nm').value.trim(),p=$('ph').value.replace(/[\s.-]/g,''),du=+$('m').value;
+ if(!d||!t)return msg('err',T('اختر التاريخ والوقت.','Choose a date and time.'));
+ if(!nm)return msg('err',T('أدخل اسمك.','Enter your name.'));
+ if(!/^\+?\d{9,13}$/.test(p))return msg('err',T('أدخل رقم هاتف صحيحًا (9 أرقام على الأقل).','Enter a valid phone number (at least 9 digits).'));
+ var dow=new Date(d+'T12:00').getDay(),open=dow==5?900:600,x=t.split(':'),m=+x[0]*60+ +x[1];
+ if(m<open&&m<120)m+=1440;
+ if(m<open||m+du>1560)return msg('err',T('الوقت خارج ساعات العمل. نفتح من '+(dow==5?'3:00 م':'10:00 ص')+' حتى 2:00 ص، والجلسة يجب أن تنتهي قبل الإغلاق.','Outside opening hours. We open from '+(dow==5?'3 PM':'10 AM')+' to 2 AM, and the session must end before closing.'));
+ var txt='Booking request / طلب حجز\n'+N[$('c').value]+' x'+$('n').value+'\n'+d+' '+t+'\n'+du+' min\nTotal: '+total()+' DZD\n'+nm+' '+p;
+ var b=$('go');b.disabled=true;msg('',T('جارٍ فتح واتساب...','Opening WhatsApp...'));
+ setTimeout(function(){
+  window.open('https://wa.me/213559567886?text='+encodeURIComponent(txt),'_blank','noopener');
+  b.disabled=false;msg('ok',T('تم تجهيز الطلب. أرسله في واتساب، والحجز يتأكد بعد ردّ المقهى.','Request ready. Send it on WhatsApp; it’s confirmed once the café replies.'));
+ },500);
+};
+setLang(s=='en'?'en':'ar');total();setInterval(status,60000);
+})();
+</script>
+</body>
+</html>
